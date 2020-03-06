@@ -30,5 +30,15 @@ The algorithms are run in an obstacle filled environment composed of a rectangle
 	Please enter the clearance:-->
 	1(**then press Enter)
 	**** for rigid robot you can enter any value****
+	Please enter start point x coordinate -->
+	5(**press Enter)
+
+	Please enter start point y coordinate -->
+	5(**press Enter)
 	
+	Please enter goal point x coordinate -->
+	295(**press Enter)
+	
+	Please enter goal point y coordinate -->
+	195(**press Enter)
 	

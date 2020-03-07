@@ -3,12 +3,13 @@
 Created on Fri Mar  6 04:27:01 2020
 
 @author: Arun
+@author: Achal
 """
 
 import numpy as np
 import cv2
 
-
+# Function to define the circle obstacle. 
 def circle(x,y):
     
     if ((np.square(x-225))+ (np.square(y-50)) <=np.square(25)):
@@ -16,7 +17,7 @@ def circle(x,y):
     else:
         return False
 
-
+# Function to define ellipse obstacle
 def ellipse(x,y):
     
     if (((np.square(x-150))/np.square(40))+((np.square(y-100))/np.square(20)) -1 <=0):
@@ -24,6 +25,7 @@ def ellipse(x,y):
     else:
         return False
     
+# Function to define rectangle obstacle    
 def rectangle(x,y):
     
     if (200-y) - (1.73)*x + 135 > 0 and (200-y) + (0.58)*x - 96.35  <= 0 and (200-y) - (1.73)*x - 15.54 <= 0 and (200-y) + (0.58)*x - 84.81 >= 0:
@@ -31,18 +33,21 @@ def rectangle(x,y):
     else:
         return False
 
+# Function to define rhombus obstacle    
 def rhombus(x,y):
     if ((x*(-3/5)+y-55<0) and (x*(3/5)+y-325<0) and (x*(-3/5)+y-25>0) and (x*(3/5)+y-295 > 0)):
         return True
     else:
         return False
     
+# Function to define polygon obstacle
 def polygon1(x,y):
     if((y+13*x-340>0) and x+y-100<0 and y+(-7/5)*x+20>0):
         return True
     else:
         return False
 
+# Function to define polygon obstacle
 def polygon2(x,y):
     if y-15>0 and (7/5)*x+y-120<0 and y+(-7/5)*x+20<0:
         return True
@@ -54,7 +59,7 @@ def polygon3(x,y):#rhombus
         return True
     else:
         return False
-    
+# Total hight and width of the entire graph
 height = 200
 width = 300
 

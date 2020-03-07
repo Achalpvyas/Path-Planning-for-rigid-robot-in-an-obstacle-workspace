@@ -4,6 +4,7 @@
 Created on Fri Mar  6 18:54:30 2020
 
 @author: Arun
+@author: Achal
 """
 
 
@@ -29,6 +30,7 @@ tot=rad+clearance
 def boundary_check(i,j):
     if (i<tot or j>199-tot or j<tot or i>299-tot):
         return 0
+    
     else:
         return 1
 

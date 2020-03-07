@@ -4,6 +4,7 @@
 Created on Fri Mar  6 18:54:30 2020
 
 @author: Arun
+@author: Achal
 """
 
 
@@ -115,12 +116,15 @@ mapy=np.ones((size),np.uint8)*255
 
 Q=[]
 
+
 # append start point and initialize it's cost to zero
 
 Q.append([x_start,y_start])
 cost_array[x_start][y_start]=0
 
 # Priority Queue Function
+
+
 
 def pop(Q):
     minimum_index=0
@@ -137,8 +141,6 @@ def pop(Q):
     current_node = Q[minimum_index]
     Q.remove(Q[minimum_index])
     return current_node
-
-
 
 
 
@@ -173,7 +175,6 @@ def NW(i,j):
 def SW(i,j):
     new_node=[i-1,j-1]
     return new_node
-
 
 
 

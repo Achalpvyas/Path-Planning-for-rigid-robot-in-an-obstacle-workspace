@@ -1,5 +1,5 @@
 # ENPM661-Project2
-ENPM 661 PROJECT 2 : Implementation of Dijkstra Algorithm for point and rigid robot in a given workspace
+ENPM 661 PROJECT 2 : Implementation of Dijkstra Algorithm for point and rigid robot for an obstacle workspace
 
 DESCRIPTION - The python program  to perform Dijkstra algorithm for a point/rigid robot based on user's input.
 The algorithms are run in an obstacle filled environment composed of a rectangle, circle, ellipse,rhombus and a polygon. The algorithm finds the shortest path to goal node from the start node(both user provided) and displays the explored nodes and the path.

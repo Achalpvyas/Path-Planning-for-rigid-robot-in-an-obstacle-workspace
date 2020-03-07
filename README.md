@@ -46,3 +46,5 @@ The algorithms are run in an obstacle filled environment composed of a rectangle
 	Please enter goal point y coordinate -->
 	195(**press Enter)
 	
+	
+For the Rigid robot, we have added the clearence to all the obstacles, but the clearence is also in black colour. Thus the clearence and the real obstacle region is of the same colour.
